@@ -722,6 +722,8 @@ layers configuration."
   ;; (with-eval-after-load 'linum
   ;;   (linum-absolute-toggle))
 
+  ;; Prevent undo tree files from polluting your git repo
+  (setq undo-tree-history-directory-alist '(("." . "~/.emacs-undo")))
   (with-eval-after-load 'org
     (org-defkey org-mode-map [(meta return)] 'org-meta-return)  ;; The actual fix
     )
