@@ -39,3 +39,6 @@ run_on_prompt_command()
 }
 
 PROMPT_COMMAND="run_on_prompt_command"
+. "$HOME/.cargo/env"
+
+. "$HOME/.local/bin/env"

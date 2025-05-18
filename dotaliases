@@ -157,3 +157,7 @@ alias aca-py='docker run --net=host bcgovimages/aries-cloudagent:py36-1.16-1_0.7
 alias aca-py-stopall='docker stop $(docker ps -q --filter ancestor=bcgovimages/aries-cloudagent:py36-1.16-1_0.7.3 )'
 
 alias excel='open -a /Applications/Microsoft\ Excel.app'
+alias uuid="uuidgen | tr -d '\n' | tr '[:upper:]' '[:lower:]'  | pbcopy && pbpaste && echo"
+
+# Whitelist of commands zsh should not correct
+alias nx='nocorrect nx' 

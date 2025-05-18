@@ -157,4 +157,6 @@ export HISTFILE=~/.zsh-history-${ITERM_SESSION_ID}
 # DVM related loads
 [[ -s "$(brew --prefix dvm)/dvm.sh" ]] && source "$(brew --prefix dvm)/dvm.sh"
 [[ -s "$(brew --prefix dvm)/bash_completion" ]] && source "$(brew --prefix dvm)/bash_completion"
-source "$HOME/.cargo/env"
+. "$HOME/.cargo/env"
+
+. "$HOME/.local/bin/env"
